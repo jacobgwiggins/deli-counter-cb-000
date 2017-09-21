@@ -4,12 +4,11 @@ def line(deli)
   if deli == []
     puts "The line is currently empty."
   else
-    counter = 0
-    # logic to add number to array elements before pulling for string
-    # puts "The line is currently: #{deli.join(deli.index + 1 + ". ")}"
-      stringarray = deli.map { |x| " #{counter}. " + x
-    counter += 1}
-puts stringarray
+    deli_line = "The line is currently:"
+    deli.each_with_index do |element, index|
+      deli_line += " #{index+1}. #{element}"
+    end
+    puts deli_line
       # puts "The line is currently:#{stringarray.join}"
 
 end
