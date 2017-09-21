@@ -8,7 +8,7 @@ def line(deli)
     # puts "The line is currently: #{deli.join(deli.index + 1 + ". ")}"
       stringarray = deli.collect { |x| "#{counter}. "+ x}
 
-      puts "The line is currently: #{count}" + deli.each_index.to_s { |x|  (x+1)} + deli.each{|x| print x}
+      puts "The line is currently: #{stringarray.join}"
       counter += 1
 end
 end
