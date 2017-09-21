@@ -10,6 +10,6 @@ def line(deli)
       stringarray = deli.collect { |x| " #{counter}. "+ x}
 
       puts "The line is currently:#{stringarray.join}"
-      counter += 1
+      counter = counter + 1
 end
 end
