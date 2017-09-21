@@ -12,4 +12,3 @@ def line(deli)
       # puts "The line is currently:#{stringarray.join}"
 
 end
-end
