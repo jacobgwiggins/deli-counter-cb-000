@@ -9,8 +9,8 @@ def line(deli)
     # puts "The line is currently: #{deli.join(deli.index + 1 + ". ")}"
       stringarray = deli.map { |x| " #{counter}. " + x
     counter += 1}
-
-      puts "The line is currently:#{stringarray.join}"
+puts stringarray
+      # puts "The line is currently:#{stringarray.join}"
 
 end
 end
